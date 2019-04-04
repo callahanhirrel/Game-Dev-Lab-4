@@ -6,6 +6,8 @@ TagManager:
   tags:
   - edge
   - platform
+  - star
+  - star2
   layers:
   - Default
   - TransparentFX

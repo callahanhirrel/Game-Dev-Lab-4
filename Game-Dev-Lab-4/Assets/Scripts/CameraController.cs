@@ -21,14 +21,19 @@ public class CameraController : MonoBehaviour
     private float yMin;
     private float yMax;
 
+    public float xMinOffset;
+    public float xMaxOffset;
+    public float yMinOffset;
+    public float yMaxOffset;
+
     // Start is called before the first frame update
     void Start()
     {
         offset = transform.position - player.transform.position;
-        xMin = leftEdge.transform.position.x + 2f;
-        xMax = rightEdge.transform.position.x - 2f;
-        yMin = bottomEdge.transform.position.y + 2f;
-        yMax = topEdge.transform.position.y - 2f;
+        xMin = leftEdge.transform.position.x + xMinOffset;
+        xMax = rightEdge.transform.position.x - xMaxOffset;
+        yMin = bottomEdge.transform.position.y + yMinOffset;
+        yMax = topEdge.transform.position.y - yMaxOffset;
     }
 
     // Use LateUpdate for camera movement
